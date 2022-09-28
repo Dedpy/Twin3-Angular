@@ -1,9 +1,12 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "cli": {
+    "analytics": "f058dc4d-c770-4873-a53f-e2a715e24c08"
+  },
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "twin3Angular": {
+    "Twin3Project": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:application": {
@@ -17,7 +20,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/twin3-angular",
+            "outputPath": "dist/twin3-project",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -68,10 +71,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "twin3Angular:build:production"
+              "browserTarget": "Twin3Project:build:production"
             },
             "development": {
-              "browserTarget": "twin3Angular:build:development"
+              "browserTarget": "Twin3Project:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -79,7 +82,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "twin3Angular:build"
+            "browserTarget": "Twin3Project:build"
           }
         },
         "test": {
@@ -102,5 +105,5 @@
       }
     }
   },
-  "defaultProject": "twin3Angular"
+  "defaultProject": "Twin3Project"
 }

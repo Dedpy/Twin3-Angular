@@ -25,7 +25,7 @@ module.exports = function (config) {
       suppressAll: true // removes the duplicated traces
     },
     coverageReporter: {
-      dir: require('path').join(__dirname, './coverage/twin3-angular'),
+      dir: require('path').join(__dirname, './coverage/twin3-project'),
       subdir: '.',
       reporters: [
         { type: 'html' },

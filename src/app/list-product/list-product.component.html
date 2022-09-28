@@ -1,0 +1,17 @@
+<div class="row">
+  <div class="col-md-3" *ngFor="let product of list">
+    <div class="card" style="width: 17rem;">
+      <img src="{{product.image}}" class="card-img-top" alt="{{product.name}}" />
+      <div class="card-body">
+        <h5 class="card-title">{{ product.name }}</h5>
+        <p class="card-text">
+          {{ product.description }}
+        </p>
+        <p>{{product.nbLike}}</p>
+        <a href="#" class="btn btn-sm btn-primary" (click)="incrementLike(product)">Like</a>
+        <a href="#" class="btn btn-sm btn-warning btnBuy" [hidden]="product.quantity==0" (click)="buyProduct(product)">Buy</a>
+        <span *ngIf="product.quantity==0" >Out of stock</span>
+      </div>
+    </div>
+  </div>
+</div>

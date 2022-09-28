@@ -38,12 +38,12 @@ export class ListProductComponent implements OnInit {
       },
       {
         id: 3,
-        name: 'Tablet',
+        name: 'Watch',
         price: 300,
-        description: 'Tablet Apple',
+        description: 'Smart watch xioami',
         category: 'Computer',
         image:
-          'https://mk-media.mytek.tn/media/catalog/product/cache/8be3f98b14227a82112b46963246dfe1/m/k/mk2k3nf-a.jpg',
+          'https://media.mytek.tn/media/webp_image/wysiwyg/banner/smartwatch/BHR5439GL.webp',
         nbLike: 0,
         quantity: 2,
       },

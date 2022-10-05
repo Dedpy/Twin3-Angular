@@ -9,6 +9,7 @@ import { Component, OnInit } from '@angular/core';
 export class ListProductComponent implements OnInit {
   public title: String;
   public list: Product[];
+  priceMax: number;
   constructor() {}
 
   ngOnInit(): void {
@@ -17,7 +18,7 @@ export class ListProductComponent implements OnInit {
       {
         id: 1,
         name: 'Laptop',
-        price: 1000,
+        price: 599,
         description: 'Laptop HP',
         category: 'Computer',
         image:
@@ -28,7 +29,7 @@ export class ListProductComponent implements OnInit {
       {
         id: 2,
         name: 'Smartphone',
-        price: 500,
+        price: 429,
         description: 'Smartphone Samsung',
         category: 'Phone',
         image:
@@ -39,7 +40,7 @@ export class ListProductComponent implements OnInit {
       {
         id: 3,
         name: 'Watch',
-        price: 300,
+        price: 235,
         description: 'Smart watch xioami',
         category: 'Computer',
         image:
@@ -61,4 +62,5 @@ export class ListProductComponent implements OnInit {
       this.list[i].quantity--;
     }
   }
+
 }

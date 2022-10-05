@@ -7,15 +7,11 @@ import { ListProductComponent } from './list-product/list-product.component';
 import { FooterComponent } from './footer/footer.component';
 import { ListUserComponent } from './list-user/list-user.component';
 import { FormsModule } from '@angular/forms';
-import { Routes,RouterModule } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { ContactComponent } from './contact/contact.component';
-const ROUTES: Routes = [
-  {path:'product',component:ListProductComponent},
-  {path:'user',component:ListUserComponent},
-  {path:'home',component:HomeComponent},
-  {path:'contact',component:ContactComponent}
-]
+import { AppRoutingModule } from './app-routing.module';
+import { NotFoundComponent } from './not-found/not-found.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,12 +20,13 @@ const ROUTES: Routes = [
     FooterComponent,
     ListUserComponent,
     HomeComponent,
-    ContactComponent
+    ContactComponent,
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    RouterModule.forRoot(ROUTES)
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
